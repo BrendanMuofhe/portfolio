@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brendans' Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles/styles.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logo.jpg" alt="">   
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hello, I am <strong>Brendan Muofhe</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Computer Engineer</p>
+            <img src="img/main.jpg" alt="a picture of Brendan Muofhe" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Quality Assurance and Testing</h3>
+                    <p>I test hardware designs and software systems to ensure that everything works correctly.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Data Communications + Networking</h3>
+                    <p>I can transmit a digital data between two or more computers or a computer network using network topologies, transmission fundamentals, contention protocols, data compression techniques, data security and integrity, flow-control protocols and the various IEEE standards.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Development and Engineering</h3>
+                    <p>I Model electronic components and their application in circuit analysis and design. This is done through the use of microprocessors and circuitry. I also have extensive knowledge of major operating systems, databases, programming, digital systems and operational research.</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Computer Engineer based in Gauteng</p>
+           
+           <div class="about-me__body">
+               <p>I am a software developer with an unmeasurable passion for software and its evolution. I am a great problem solver, excellent team player and a good listener. I have a strong work ethic and I know how to manage time. I am a people pleaser, I would not mind helping a fellow colleague. This is why I was appointed the position of Class Representative 3 times in a row by my classmates.</p>
+               <p>During the time that I have spent in varsity and with all the projects I have completed, I learnt that one of the most important attributes needed to complete a task is good communication and team work. If teamwork is the fuel that moves a project from point A to B, then you can consider me as the fuel company that makes sure the fuel is produced with great quality to move the project move fast and effectively.</p>
+           </div>
+           
+           <img src="img/blackandwhite.jpg" alt="Brendan Muofhe in black and white." class="about-me__img">
+        </section>
+        
+        <!-- My Work-->
+        <section class="my-work" id="work">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2 class="section__title section__title--work">My Work</h2>
+                    <p class="section__subtitle section__subtitle--work">These are a few of my DOM projects</p>
+                </div>
+                <div class="blogs">
+                    <div class="blog">
+                        <a href="projects/01-menu/final/menu.html" class="portfolio__item">
+                            <img src="img/1.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <div class="blog-text">
+                            <h4>
+                                Menu
+                            </h4>
+                            <p>
+                                On this project I created an avarage restaurant Menu.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <a href="projects/02-dad-jokes/final/dad.html" class="portfolio__item">
+                            <img src="img/2.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <div class="blog-text">
+                            <h4>
+                                Dad Jokes
+                            </h4>
+                            <p>
+                                This project is filled with corny dad jokes that will surely make you 
+                                question everything.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <a href="projects/03-countdown-timer/final/countd.html" class="portfolio__item">
+                            <img src="img/3.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <div class="blog-text">
+                            <h4>
+                                Countdown Timer
+                            </h4>
+                            <p>
+                                On this project I created a count-down timer for an old phone give away.
+                                First come, first serve. Hurry up before someone beats you to it.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <a href="projects/04-products/final/pds.html" class="portfolio__item">
+                            <img src="img/4.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <div class="blog-text">
+                            <h4>
+                                Products
+                            </h4>
+                            <p>
+                                Here is a range of high quality products for sale. This project is almost like
+                                the Menu project but not really.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <a href="projects/05-grocery-bud/final/grocerybud.html" class="portfolio__item">
+                            <img src="img/5.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <div class="blog-text">
+                            <h4>
+                                Grocery Bud
+                            </h4>
+                            <p>
+                                Are you tired of forgetting your grocery list? 
+                                Worry less, I got your back. Here is a project made to solve that problem.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <a href="projects/06-wikipedia/final/wiki.html" class="portfolio__item">
+                            <img src="img/6.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <div class="blog-text">
+                            <h4>
+                                Wikipedia
+                            </h4>
+                            <p>
+                                This is a Wikipedia project.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <a href="projects/07-counter/final/count.html" class="portfolio__item">
+                            <img src="img/7.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <div class="blog-text">
+                            <h4>
+                                Counter
+                            </h4>
+                            <p>
+                                This is actually my very first javascript project. It is actually very fun for 
+                                the first 5 seconds. LMAO
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <a href="projects/08-cocktails/final/cocktaildrinks.html" class="portfolio__item">
+                            <img src="img/8.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <div class="blog-text">
+                            <h4>
+                                Cocktails
+                            </h4>
+                            <p>
+                                Bottoms up! 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <a href="projects/09-video/final/vid.html" class="portfolio__item">
+                            <img src="img/9.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <div class="blog-text">
+                            <h4>
+                                Video
+                            </h4>
+                            <p>
+                                Pause and play this video project as many times as your heart desires. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:muofheb@gmail.com" class="footer__link">muofheb@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.facebook.com/brendan.muofhe/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://www.linkedin.com/mwlite/in/brendan-muofhe-238035197">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/abuti_brendan/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/BrendanMuofhe">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+       <script src="index.js"></script> 
+        
+    </body>
+</html>
