@@ -661,6 +661,7 @@ header {
     line-height: 22px;
 }
 
+
 /* Responsive*/
 @media(max-width: 767px){
     .timeline-items::before{
