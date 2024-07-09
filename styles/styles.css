@@ -802,3 +802,42 @@ header {
 
 
 /*# sourceMappingURL=styles.css.map */
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    margin: 1em;
+    padding: 2em;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+    flex: 1 1 30%; /* Ensures boxes take equal space */
+    max-width: 30%; /* Ensures boxes don't exceed 30% width */
+    box-sizing: border-box; /* Ensures padding and border are included in the width/height */
+    height: 300px; /* Adjust the height to make them almost square */
+    display: flex; /* Center text horizontally and vertically */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category h3 {
+    margin-bottom: 0.5em;
+}
+
+.category p {
+    margin-top: 0;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+

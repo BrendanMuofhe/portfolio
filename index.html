@@ -1,76 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Brendans' Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-        <!-- FONTS -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="styles/styles.css">
-
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="img/logo.jpg" alt="">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brendan's Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+    
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Logo">   
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hello, I am <strong>Brendan Muofhe</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Computer Engineer</p>
+        <img src="img/workpic.jpg" alt="a picture of Brendan Muofhe" class="intro__img">
+    </section>
+    
+    <!-- My services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>As an experienced Software Developer, I specialize in building dynamic and responsive web applications using React and React Native. My skills extend to developing mobile applications, ensuring seamless user experiences across different devices. I am proficient in using Firebase, MongoDB, and Prisma to create robust backends, and Postman for API testing and integration.</p>
             </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hello, I am <strong>Brendan Muofhe</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Computer Engineer</p>
-            <img src="img/workpic.jpg" alt="a picture of Brendan Muofhe" class="intro__img">
-        </section>
-        
-        
-        <!-- My services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Web Development</h3>
-                    <p>As an experienced Software Developer, I specialize in building dynamic and responsive web applications using React and React Native. My skills extend to developing mobile applications, ensuring seamless user experiences across different devices. I am proficient in using Firebase, MongoDB, and Prisma to create robust backends, and Postman for API testing and integration.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>DevOps</h3>
-                    <p>With a strong foundation in DevOps, I bring expertise in automating and optimizing development processes. I have experience with CI/CD pipelines, containerization, and orchestration tools that ensure efficient and reliable software delivery. My commitment includes streamlining workflows, enhancing collaboration, and reducing deployment times to accelerate project timelines.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>System Administration</h3>
-                    <p>I also have experience in system administration, managing and maintaining IT infrastructure to ensure optimal performance and security. My skills include server setup, network configuration, and troubleshooting to support the seamless operation of IT systems. I am dedicated to implementing best practices and proactive measures to maintain system integrity and reliability.</p>
-                </div> <!-- / service -->
-            </div> <!-- / services -->
-            
-            <a href="#work" class="btn">My Work</a>
-        </section>
-        
-        
-        <!-- About me -->
-        <section class="about-me" id="about">
-           <h2 class="section__title section__title--about">Who I am</h2>
-           <p class="section__subtitle section__subtitle--about">Computer Engineer based in Gauteng</p>
-           
-           <div class="about-me__body">
+            <div class="service">
+                <h3>DevOps</h3>
+                <p>With a strong foundation in DevOps, I bring expertise in automating and optimizing development processes. I have experience with CI/CD pipelines, containerization, and orchestration tools that ensure efficient and reliable software delivery. My commitment includes streamlining workflows, enhancing collaboration, and reducing deployment times to accelerate project timelines.</p>
+            </div>
+            <div class="service">
+                <h3>System Administration</h3>
+                <p>I also have experience in system administration, managing and maintaining IT infrastructure to ensure optimal performance and security. My skills include server setup, network configuration, and troubleshooting to support the seamless operation of IT systems. I am dedicated to implementing best practices and proactive measures to maintain system integrity and reliability.</p>
+            </div>
+        </div>
+        <a href="#work" class="btn">My Work</a>
+    </section>
+    
+    <!-- About me -->
+    <section class="about-me" id="about">
+       <h2 class="section__title section__title--about">Who I am</h2>
+       <p class="section__subtitle section__subtitle--about">Computer Engineer based in Gauteng</p>
+       <div class="about-me__body">
             <section id="about-me">
                 <p>
                     Hi, I'm Brendan Muofhe. A Computer Systems Engineering graduate from Tshwane University of Technology (TUT). I currently work at Telkom, where my journey began as a System Administrator.
@@ -92,227 +90,105 @@
                 </p>
             </section>
         </div>
-        
-           
-           <img src="img/blackandwhite.jpg" alt="Brendan Muofhe in black and white." class="about-me__img">
-           
-           <div class="btn-con">
-            <a href="certificates/Matric_Certificate.pdf" class="main-btn">
+       <img src="img/blackandwhite.jpg" alt="Brendan Muofhe in black and white." class="about-me__img">
+       <div class="btn-con">
+            <a href="" class="main-btn">
                 <span class="btn-text">Certificates</span>
                 <span class="btn-icon"><i class="fas fa-download"></i></span>
             </a>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Timeline -->
-        <section class="timeline-section">
-            <div class="timeline-items">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2005 - 2012</div>
-                    <div class="timeline-content">
-                        <h3>Primary School</h3>
-                        <h4>Wolraad Woltemade Primary School</h4>
-                        <p>Wolraad Woltemade Primary School, situated in Cape Town, played a pivotal role in shaping my foundational principles and honing my communication skills. My time here provided a typical yet essential primary school experience.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2013 - 2017</div>
-                    <div class="timeline-content">
-                        <h3>Secondary School</h3>
-                        <h4>Lenz Public High School</h4>
-                        <p>Lenz Public High School holds a special place in my academic journey, where I cultivated a profound love and passion for mathematics and physical sciences. Spending five formative years here, my dedication and hard work were reflected in my achievements. At the culmination of my high school years, I proudly earned the distinction of being the second-best student in Pure Maths, earning me the qualification to pursue a Bachelor's Degree.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2019 - 2023</div>
-                    <div class="timeline-content">
-                        <h3>Tertiary Education</h3>
-                        <h4>Tshwane University of Technology</h4>
-                        <p>As one of the top fifteen science, technology, and engineering universities in South Africa, Tshwane University of Technology (TUT) has been a crucial part of my educational journey. Studying Computer Systems Engineering (CSE) at TUT provided me with a wealth of quality information in the field of Computer Science. I am proud of my academic endeavors at TUT and look forward to continuing my educational pursuits within this esteemed institution.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Present</div>
-                    <div class="timeline-content">
-                        <h3>Junior Developer</h3>
-                        <h4>Telkom</h4>
-                        <p>Currently, I contribute to Telkom's success through my role in product support.</p>
-                    </div>
+    <!-- Timeline -->
+    <section class="timeline-section">
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2005 - 2012</div>
+                <div class="timeline-content">
+                    <h3>Primary School</h3>
+                    <h4>Wolraad Woltemade Primary School</h4>
+                    <p>Wolraad Woltemade Primary School, situated in Cape Town, played a pivotal role in shaping my foundational principles and honing my communication skills. My time here provided a typical yet essential primary school experience.</p>
                 </div>
             </div>
-        </section>
-
-        
-        <!-- My Work-->
-        <section class="my-work" id="work">
-            <div class="blogs-content">
-                <div class="main-title">
-                    <h2 class="section__title section__title--work">My Work</h2>
-                    <p class="section__subtitle section__subtitle--work">These are a few of my DOM projects</p>
-                </div>
-                <div class="blogs">
-                    <div class="blog">
-                        <a href="projects/01-menu/final/menu.html" class="portfolio__item">
-                            <img src="img/1.jpg" alt="" class="portfolio__img">
-                        </a>
-                        <div class="blog-text">
-                            <h4>
-                                Menu
-                            </h4>
-                            <p>
-                                On this project I created an avarage restaurant Menu.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <a href="projects/02-dad-jokes/final/dad.html" class="portfolio__item">
-                            <img src="img/2.jpg" alt="" class="portfolio__img">
-                        </a>
-                        <div class="blog-text">
-                            <h4>
-                                Dad Jokes
-                            </h4>
-                            <p>
-                                This project is filled with corny dad jokes that will surely make you 
-                                question everything.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <a href="projects/03-countdown-timer/final/countd.html" class="portfolio__item">
-                            <img src="img/3.jpg" alt="" class="portfolio__img">
-                        </a>
-                        <div class="blog-text">
-                            <h4>
-                                Countdown Timer
-                            </h4>
-                            <p>
-                                On this project I created a count-down timer for an old phone give away.
-                                First come, first serve. Hurry up before someone beats you to it.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <a href="projects/04-products/final/pds.html" class="portfolio__item">
-                            <img src="img/4.jpg" alt="" class="portfolio__img">
-                        </a>
-                        <div class="blog-text">
-                            <h4>
-                                Products
-                            </h4>
-                            <p>
-                                Here is a range of high quality products for sale. This project is almost like
-                                the Menu project but not really.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <a href="projects/05-grocery-bud/final/grocerybud.html" class="portfolio__item">
-                            <img src="img/5.jpg" alt="" class="portfolio__img">
-                        </a>
-                        <div class="blog-text">
-                            <h4>
-                                Grocery Bud
-                            </h4>
-                            <p>
-                                Are you tired of forgetting your grocery list? 
-                                Worry less, I got your back. Here is a project made to solve that problem.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <a href="projects/06-wikipedia/final/wiki.html" class="portfolio__item">
-                            <img src="img/6.jpg" alt="" class="portfolio__img">
-                        </a>
-                        <div class="blog-text">
-                            <h4>
-                                Wikipedia
-                            </h4>
-                            <p>
-                                This is a Wikipedia project.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <a href="projects/07-counter/final/count.html" class="portfolio__item">
-                            <img src="img/7.jpg" alt="" class="portfolio__img">
-                        </a>
-                        <div class="blog-text">
-                            <h4>
-                                Counter
-                            </h4>
-                            <p>
-                                This is actually my very first javascript project. It is actually very fun for 
-                                the first 5 seconds. LMAO
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <a href="projects/08-cocktails/final/cocktaildrinks.html" class="portfolio__item">
-                            <img src="img/8.jpg" alt="" class="portfolio__img">
-                        </a>
-                        <div class="blog-text">
-                            <h4>
-                                Cocktails
-                            </h4>
-                            <p>
-                                Bottoms up! 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <a href="projects/09-video/final/vid.html" class="portfolio__item">
-                            <img src="img/9.jpg" alt="" class="portfolio__img">
-                        </a>
-                        <div class="blog-text">
-                            <h4>
-                                Video
-                            </h4>
-                            <p>
-                                Pause and play this video project as many times as your heart desires. 
-                            </p>
-                        </div>
-                    </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2013 - 2017</div>
+                <div class="timeline-content">
+                    <h3>Secondary School</h3>
+                    <h4>Lenz Public High School</h4>
+                    <p>Lenz Public High School holds a special place in my academic journey, where I cultivated a profound love and passion for mathematics and physical sciences. Spending five formative years here, my dedication and hard work were reflected in my achievements. At the culmination of my high school years, I proudly earned the distinction of being the second-best student in Pure Maths, earning me the qualification to pursue a Bachelor's Degree.</p>
                 </div>
             </div>
-        </section>
-        
-        
-        <!-- Footer -->
-        <footer class="footer">
-            <a href="mailto:muofheb@gmail.com" class="footer__link">muofheb@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.facebook.com/brendan.muofhe/">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="http://www.linkedin.com/mwlite/in/brendan-muofhe-238035197">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com/abuti_brendan/">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/BrendanMuofhe">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-        
-       <script src="index.js"></script> 
-        
-    </body>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2019 - 2023</div>
+                <div class="timeline-content">
+                    <h3>Tertiary Education</h3>
+                    <h4>Tshwane University of Technology</h4>
+                    <p>As one of the top fifteen science, technology, and engineering universities in South Africa, Tshwane University of Technology (TUT) has been a crucial part of my educational journey. Studying Computer Systems Engineering (CSE) at TUT provided me with a wealth of quality information in the field of Computer Science. I am proud of my academic endeavors at TUT and look forward to continuing my educational pursuits within this esteemed institution.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Present</div>
+                <div class="timeline-content">
+                    <h3>Junior Developer</h3>
+                    <h4>Telkom</h4>
+                    <p>Currently, I contribute to Telkom's success through my role in product support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Categories -->
+    <section class="project-categories" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work">Select a category to view projects</p>
+        <div class="categories">
+            <div class="category" onclick="location.href='projects.html';">
+                <h3>DOM Projects</h3>
+                <p>Projects related to DOM manipulation and JavaScript</p>
+            </div>
+            <div class="category">
+                <h3>API Integration Project</h3>
+                <p>project 1</p>
+            </div>
+            <div class="category">
+                <h3>DevOps Projects</h3>
+                <p>project 2</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:muofheb@gmail.com" class="footer__link">muofheb@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.facebook.com/brendan.muofhe/">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="http://www.linkedin.com/mwlite/in/brendan-muofhe-238035197">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://twitter.com/abuti_brendan/">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/BrendanMuofhe">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    
+   <script src="index.js"></script> 
+    
+</body>
 </html>
